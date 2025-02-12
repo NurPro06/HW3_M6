@@ -1,6 +1,7 @@
 package kg.geeks.hw3_m6.ui.navigation
 
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -10,7 +11,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-
+import kg.geeks.hw3_m6.ui.screens.characters.CharacterDetailScreen
+import kg.geeks.hw3_m6.ui.screens.characters.CharactersScreen
+import kg.geeks.hw3_m6.ui.screens.episodes.EpisodesScreen
+import kg.geeks.hw3_m6.ui.screens.locations.LocationsScreen
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AppNavigation() {
     val navController = rememberNavController()
