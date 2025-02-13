@@ -13,6 +13,9 @@ import androidx.navigation.NavController
 fun LocationsScreen(navController: NavController) {
     Column(horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxSize()) {
-        Text("Список локаций", style = MaterialTheme.typography.headlineLarge)
+        Text(
+            "Список локаций",
+            style = MaterialTheme.typography.headlineLarge
+        )
     }
 }

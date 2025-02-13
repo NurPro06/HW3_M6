@@ -1,8 +1,15 @@
 package kg.geeks.hw3_m6.ui.screens.characters
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material3.*
+import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -61,11 +68,24 @@ fun CharacterDetailScreen(navController: NavController, characterId: String) {
 
         Spacer(modifier = Modifier.height(12.dp))
 
-        Text(text = character.name, style = MaterialTheme.typography.headlineLarge)
-        Text(text = "Статус: ${character.status}", style = MaterialTheme.typography.bodyMedium)
-        Text(text = "Вид: ${character.species}", style = MaterialTheme.typography.bodyMedium)
-        Text(text = "Пол: ${character.gender}", style = MaterialTheme.typography.bodyMedium)
-        Text(text = "Местоположение: ${character.location}", style = MaterialTheme.typography.bodyMedium)
+        Text(
+            text = character.name,
+            style = MaterialTheme.typography.headlineLarge
+        )
+        Text(text = "Статус: ${character.status}",
+            style = MaterialTheme.typography.bodyMedium
+        )
+        Text(text = "Вид: ${character.species}",
+            style = MaterialTheme.typography.bodyMedium
+        )
+        Text(
+            text = "Пол: ${character.gender}",
+            style = MaterialTheme.typography.bodyMedium
+        )
+        Text(
+            text = "Местоположение: ${character.location}",
+            style = MaterialTheme.typography.bodyMedium
+        )
 
         Spacer(modifier = Modifier.height(16.dp))
 

@@ -22,13 +22,26 @@ fun EpisodeDetailScreen(navController: NavController, episodeId: String) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Text(text = "Детали эпизода", style = MaterialTheme.typography.headlineLarge)
-        Text(text = "Эпизод ID: $episodeId", style = MaterialTheme.typography.bodyMedium)
+        Text(
+            text = "Детали эпизода",
+            style = MaterialTheme.typography.headlineLarge
+        )
+        Text(
+            text = "Эпизод ID: $episodeId",
+            style = MaterialTheme.typography.bodyMedium
+        )
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(
+            modifier = Modifier
+                .height(16.dp)
+        )
 
-        Button(onClick = { navController.popBackStack() }) {
-            Text("Назад")
+        Button(
+            onClick = { navController.popBackStack() }
+        ) {
+            Text(
+                "Назад"
+            )
         }
     }
 }

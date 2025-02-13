@@ -22,12 +22,23 @@ fun LocationDetailScreen(navController: NavController, locationId: String) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Text(text = "Детали локации", style = MaterialTheme.typography.headlineLarge)
-        Text(text = "Локация ID: $locationId", style = MaterialTheme.typography.bodyMedium)
+        Text(
+            text = "Детали локации",
+            style = MaterialTheme.typography.headlineLarge
+        )
+        Text(
+            text = "Локация ID: $locationId",
+            style = MaterialTheme.typography.bodyMedium
+        )
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(
+            modifier = Modifier
+                .height(16.dp)
+        )
 
-        Button(onClick = { navController.popBackStack() }) {
+        Button(
+            onClick = { navController.popBackStack() }
+        ) {
             Text("Назад")
         }
     }

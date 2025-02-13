@@ -36,11 +36,20 @@ fun CharacterItem(character: Character, onClick: () -> Unit) {
                 contentScale = ContentScale.Crop
             )
 
-            Spacer(modifier = Modifier.width(8.dp))
+            Spacer(
+                modifier = Modifier
+                    .width(8.dp)
+            )
 
             Column {
-                Text(text = character.name, style = MaterialTheme.typography.titleLarge)
-                Text(text = "Статус: ${character.status}", style = MaterialTheme.typography.bodyMedium)
+                Text(
+                    text = character.name,
+                    style = MaterialTheme.typography.titleLarge
+                )
+                Text(
+                    text = "Статус: ${character.status}",
+                    style = MaterialTheme.typography.bodyMedium
+                )
             }
         }
     }

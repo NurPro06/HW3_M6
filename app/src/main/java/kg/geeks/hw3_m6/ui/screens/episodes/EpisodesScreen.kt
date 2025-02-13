@@ -13,6 +13,8 @@ import androidx.navigation.NavController
 fun EpisodesScreen(navController: NavController) {
     Column(horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxSize()) {
-        Text("Список эпизодов", style = MaterialTheme.typography.headlineLarge)
+        Text("Список эпизодов",
+            style = MaterialTheme.typography.headlineLarge
+        )
     }
 }
