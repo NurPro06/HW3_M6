@@ -52,6 +52,7 @@ dependencies {
     //koin
     implementation(libs.koin.compose)
     implementation(libs.koin.android)
+    implementation(libs.koin.compose.viewmodel)
 
     //Retrofit
     implementation(libs.retrofit)
@@ -76,5 +77,6 @@ dependencies {
     implementation(libs.coil.compose)
     //Gson
     implementation(libs.gson)
+    implementation(libs.converter.gson)
 
 }

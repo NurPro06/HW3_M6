@@ -48,15 +48,15 @@ fun AppNavigation() {
             composable("locations") { LocationsScreen(navController) }
             composable("episodes") { EpisodesScreen(navController) }
 
-            composable("character_detail/{id}") { backStackEntry ->
+            composable("Character Detail") { backStackEntry ->
                 val id = backStackEntry.arguments?.getString("id") ?: "Unknown"
                 CharacterDetailScreen(navController, id)
             }
-            composable("location_detail/{id}") { backStackEntry ->
+            composable("Location Detail") { backStackEntry ->
                 val id = backStackEntry.arguments?.getString("id") ?: "Unknown"
                 LocationDetailScreen(navController, id)
             }
-            composable("episode_detail/{id}") { backStackEntry ->
+            composable("Episode Detail") { backStackEntry ->
                 val id = backStackEntry.arguments?.getString("id") ?: "Unknown"
                 EpisodeDetailScreen(navController, id)
             }

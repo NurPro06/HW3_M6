@@ -14,9 +14,9 @@ import androidx.navigation.NavController
 @Composable
 fun BottomNavigationBar(navController: NavController) {
     val items = listOf(
-        BottomNavItem("characters", Icons.Default.Person, "Персонажи"),
-        BottomNavItem("locations", Icons.Default.Place, "Локации"),
-        BottomNavItem("episodes", Icons.AutoMirrored.Filled.List, "Эпизоды")
+        BottomNavItem("Characters", Icons.Default.Person, "Персонажи"),
+        BottomNavItem("Locations", Icons.Default.Place, "Локации"),
+        BottomNavItem("Episodes", Icons.AutoMirrored.Filled.List, "Эпизоды")
     )
 
     NavigationBar {
